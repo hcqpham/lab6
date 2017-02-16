@@ -1,6 +1,7 @@
 var projects = require('../projects.json');
 
 exports.projectInfo = function(req, res) { 
+	console.log('randomPalette');
 	var projectID = req.params.id;
 	if (projectID == "random") {
 		projectID = Math.floor(Math.random() * projects.length) + 1;
